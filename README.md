@@ -18,7 +18,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- See hover states for interactive elements
+- See reposnsive layout.
 
 ### Screenshot
 
@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/mariangavlytskiy/order-summary-component-main)
-- Live Site URL: [Live site URL](https://mariangavlytskiy.github.io/order-summary-component-main/)
+- Solution URL: [Solution URL](https://github.com/mariangavlytskiy/single-price-grid-component-master)
+- Live Site URL: [Live site URL](https://mariangavlytskiy.github.io/single-price-grid-component-master/)
 
 ## My process
 
@@ -37,6 +37,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Mobile first layout
 
 ## Author
 
