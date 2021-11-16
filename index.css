@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    
+    /* Primary colors*/
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsla(180, 47%, 52%, 1);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --white: hsl(0, 0%, 100%);
+    
+    /*Neutral colors*/
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --body-bg-color: var(--light-gray);
+    /*Typography*/
+    --regular-text-size: 16px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: var(--regular-text-size);
+    color: var(--light-gray);
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+button {
+    width: 100%;
+    padding: 1rem; 
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bright-yellow);
+    color: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 3rem 0 0; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10vh auto;
+    width: 100%;
+    max-width: 350px;
+}
+
+.container > section {
+    padding: 1.4rem 1.7rem;
+}
+
+.join-us {
+    border-radius: 15px 15px 0 0;
+}
+
+.why-us {
+    border-radius: 0 0 15px 15px;
+}
+
+.join-us {
+    grid-area: join-us;
+    background-color: var(--white);
+    color: var(--grayish-blue);
+    line-height: 1.6rem;
+}
+.join-us > h1 {
+    color: var(--cyan);
+}
+.join-us > h4 {
+    color: var(--bright-yellow);
+    margin: 2rem 0 1.5rem;
+}
+
+.subcsription {
+    grid-area: subscription;
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+.subscsription__price {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 0.2rem;
+}
+
+.subscsription__price p {
+    opacity: 0.5
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0 0.6rem 0 0;
+}
+
+.why-us {
+    grid-area: why-us;
+    background-color: var(--light-cyan);
+}
+
+.why-us > ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    opacity: 0.6;
+    line-height: 1.5rem;
+}
+
+.attribution { color: var(--grayish-blue); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 50vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: 
+            'join-us join-us'
+            'subscription why-us';
+    }
+    .container section {
+        padding: 2rem 3rem;
+    }
+    .join-us h4 {
+        margin: 1.5rem 0 1rem;
+    }
+    .why-us {
+        border-radius: 0 0 15px 0;
+    }
+    .subcsription {
+        border-radius: 0 0 0 15px;
+    }
+}
